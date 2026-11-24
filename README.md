@@ -224,5 +224,5 @@ downgrade 后 `industry*` 表数为 0 → 再 upgrade 成功。
 | 依赖其他工单接口时用 mock 并写明对接点 | 本单无跨工单依赖，无 mock；对接点见第 8 节 | 第 8 节 |
 | 只用虚构数据、不含客户名称 | 仅行业分类标准条目 | 第 10 节 |
 | 交付物：脚本、样例 JSON、执行说明 | 均有 | 第 1 节 |
-| 提交 PR 链接 | 随附 `docs/PR.md` 与整包仓库结构；链接需仓库写权限 | `docs/PR.md` |
+| 提交仓库/PR 链接 | ✅ 已推送公开仓库，main 分支可匿名克隆：`https://github.com/zhangxu2024123-star/3283-industry-tags-delivery`；PR 说明见 `docs/PR.md` | 仓库 HEAD `f64083b` |
 
