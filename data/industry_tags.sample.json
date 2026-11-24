@@ -1,0 +1,918 @@
+{
+  "schema_version": "1.0",
+  "dataset": "industry_tags_seed",
+  "note": "行业分类标签初稿：12 门类 / 38 大类 / 50 中类，共 100 条；gb_code 与 gb_name 取自 GB/T 4754-2017 公开条目，name 为业务化改写；全部为分类标准条目，不含任何真实企业、个人信息或客户名称。",
+  "level_legend": {
+    "1": "门类",
+    "2": "大类",
+    "3": "中类/小类"
+  },
+  "counts": {
+    "total": 100,
+    "L1": 12,
+    "L2": 38,
+    "L3": 50
+  },
+  "tags": [
+    {
+      "code": "A",
+      "name": "农林牧渔",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "A",
+      "gb_name": "农、林、牧、渔业",
+      "sort_order": 10
+    },
+    {
+      "code": "C",
+      "name": "制造业",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "C",
+      "gb_name": "制造业",
+      "sort_order": 20
+    },
+    {
+      "code": "D",
+      "name": "电力热力燃气及水",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "D",
+      "gb_name": "电力、热力、燃气及水生产和供应业",
+      "sort_order": 30
+    },
+    {
+      "code": "E",
+      "name": "建筑业",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "E",
+      "gb_name": "建筑业",
+      "sort_order": 40
+    },
+    {
+      "code": "F",
+      "name": "批发和零售",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "F",
+      "gb_name": "批发和零售业",
+      "sort_order": 50
+    },
+    {
+      "code": "G",
+      "name": "交通仓储邮政",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "G",
+      "gb_name": "交通运输、仓储和邮政业",
+      "sort_order": 60
+    },
+    {
+      "code": "H",
+      "name": "住宿和餐饮",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "H",
+      "gb_name": "住宿和餐饮业",
+      "sort_order": 70
+    },
+    {
+      "code": "I",
+      "name": "信息传输软件和信息技术服务",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "I",
+      "gb_name": "信息传输、软件和信息技术服务业",
+      "sort_order": 80
+    },
+    {
+      "code": "J",
+      "name": "金融业",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "J",
+      "gb_name": "金融业",
+      "sort_order": 90
+    },
+    {
+      "code": "L",
+      "name": "租赁和商务服务",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "L",
+      "gb_name": "租赁和商务服务业",
+      "sort_order": 100
+    },
+    {
+      "code": "M",
+      "name": "科学研究和技术服务",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "M",
+      "gb_name": "科学研究和技术服务业",
+      "sort_order": 110
+    },
+    {
+      "code": "R",
+      "name": "文化体育和娱乐",
+      "parent_code": null,
+      "level": 1,
+      "gb_code": "R",
+      "gb_name": "文化、体育和娱乐业",
+      "sort_order": 120
+    },
+    {
+      "code": "01",
+      "name": "农业",
+      "parent_code": "A",
+      "level": 2,
+      "gb_code": "01",
+      "gb_name": "农业",
+      "sort_order": 10
+    },
+    {
+      "code": "02",
+      "name": "林业",
+      "parent_code": "A",
+      "level": 2,
+      "gb_code": "02",
+      "gb_name": "林业",
+      "sort_order": 20
+    },
+    {
+      "code": "03",
+      "name": "畜牧业",
+      "parent_code": "A",
+      "level": 2,
+      "gb_code": "03",
+      "gb_name": "畜牧业",
+      "sort_order": 30
+    },
+    {
+      "code": "04",
+      "name": "渔业",
+      "parent_code": "A",
+      "level": 2,
+      "gb_code": "04",
+      "gb_name": "渔业",
+      "sort_order": 40
+    },
+    {
+      "code": "13",
+      "name": "农副食品加工",
+      "parent_code": "C",
+      "level": 2,
+      "gb_code": "13",
+      "gb_name": "农副食品加工业",
+      "sort_order": 50
+    },
+    {
+      "code": "14",
+      "name": "食品制造",
+      "parent_code": "C",
+      "level": 2,
+      "gb_code": "14",
+      "gb_name": "食品制造业",
+      "sort_order": 60
+    },
+    {
+      "code": "26",
+      "name": "化工制造",
+      "parent_code": "C",
+      "level": 2,
+      "gb_code": "26",
+      "gb_name": "化学原料和化学制品制造业",
+      "sort_order": 70
+    },
+    {
+      "code": "27",
+      "name": "医药制造",
+      "parent_code": "C",
+      "level": 2,
+      "gb_code": "27",
+      "gb_name": "医药制造业",
+      "sort_order": 80
+    },
+    {
+      "code": "34",
+      "name": "通用设备制造",
+      "parent_code": "C",
+      "level": 2,
+      "gb_code": "34",
+      "gb_name": "通用设备制造业",
+      "sort_order": 90
+    },
+    {
+      "code": "36",
+      "name": "汽车制造",
+      "parent_code": "C",
+      "level": 2,
+      "gb_code": "36",
+      "gb_name": "汽车制造业",
+      "sort_order": 100
+    },
+    {
+      "code": "39",
+      "name": "电子设备制造",
+      "parent_code": "C",
+      "level": 2,
+      "gb_code": "39",
+      "gb_name": "计算机、通信和其他电子设备制造业",
+      "sort_order": 110
+    },
+    {
+      "code": "40",
+      "name": "仪器仪表制造",
+      "parent_code": "C",
+      "level": 2,
+      "gb_code": "40",
+      "gb_name": "仪器仪表制造业",
+      "sort_order": 120
+    },
+    {
+      "code": "44",
+      "name": "电力热力生产供应",
+      "parent_code": "D",
+      "level": 2,
+      "gb_code": "44",
+      "gb_name": "电力、热力生产和供应业",
+      "sort_order": 130
+    },
+    {
+      "code": "46",
+      "name": "水的生产供应",
+      "parent_code": "D",
+      "level": 2,
+      "gb_code": "46",
+      "gb_name": "水的生产和供应业",
+      "sort_order": 140
+    },
+    {
+      "code": "47",
+      "name": "房屋建筑",
+      "parent_code": "E",
+      "level": 2,
+      "gb_code": "47",
+      "gb_name": "房屋建筑业",
+      "sort_order": 150
+    },
+    {
+      "code": "48",
+      "name": "土木工程建筑",
+      "parent_code": "E",
+      "level": 2,
+      "gb_code": "48",
+      "gb_name": "土木工程建筑业",
+      "sort_order": 160
+    },
+    {
+      "code": "50",
+      "name": "建筑装饰装修",
+      "parent_code": "E",
+      "level": 2,
+      "gb_code": "50",
+      "gb_name": "建筑装饰、装修和其他建筑业",
+      "sort_order": 170
+    },
+    {
+      "code": "51",
+      "name": "批发",
+      "parent_code": "F",
+      "level": 2,
+      "gb_code": "51",
+      "gb_name": "批发业",
+      "sort_order": 180
+    },
+    {
+      "code": "52",
+      "name": "零售",
+      "parent_code": "F",
+      "level": 2,
+      "gb_code": "52",
+      "gb_name": "零售业",
+      "sort_order": 190
+    },
+    {
+      "code": "54",
+      "name": "道路运输",
+      "parent_code": "G",
+      "level": 2,
+      "gb_code": "54",
+      "gb_name": "道路运输业",
+      "sort_order": 200
+    },
+    {
+      "code": "56",
+      "name": "航空运输",
+      "parent_code": "G",
+      "level": 2,
+      "gb_code": "56",
+      "gb_name": "航空运输业",
+      "sort_order": 210
+    },
+    {
+      "code": "59",
+      "name": "装卸搬运和仓储",
+      "parent_code": "G",
+      "level": 2,
+      "gb_code": "59",
+      "gb_name": "装卸搬运和仓储业",
+      "sort_order": 220
+    },
+    {
+      "code": "60",
+      "name": "邮政",
+      "parent_code": "G",
+      "level": 2,
+      "gb_code": "60",
+      "gb_name": "邮政业",
+      "sort_order": 230
+    },
+    {
+      "code": "61",
+      "name": "住宿",
+      "parent_code": "H",
+      "level": 2,
+      "gb_code": "61",
+      "gb_name": "住宿业",
+      "sort_order": 240
+    },
+    {
+      "code": "62",
+      "name": "餐饮",
+      "parent_code": "H",
+      "level": 2,
+      "gb_code": "62",
+      "gb_name": "餐饮业",
+      "sort_order": 250
+    },
+    {
+      "code": "63",
+      "name": "电信广播电视和卫星传输",
+      "parent_code": "I",
+      "level": 2,
+      "gb_code": "63",
+      "gb_name": "电信、广播电视和卫星传输服务",
+      "sort_order": 260
+    },
+    {
+      "code": "64",
+      "name": "互联网和相关服务",
+      "parent_code": "I",
+      "level": 2,
+      "gb_code": "64",
+      "gb_name": "互联网和相关服务",
+      "sort_order": 270
+    },
+    {
+      "code": "65",
+      "name": "软件和信息技术服务",
+      "parent_code": "I",
+      "level": 2,
+      "gb_code": "65",
+      "gb_name": "软件和信息技术服务业",
+      "sort_order": 280
+    },
+    {
+      "code": "66",
+      "name": "货币金融服务",
+      "parent_code": "J",
+      "level": 2,
+      "gb_code": "66",
+      "gb_name": "货币金融服务",
+      "sort_order": 290
+    },
+    {
+      "code": "67",
+      "name": "资本市场服务",
+      "parent_code": "J",
+      "level": 2,
+      "gb_code": "67",
+      "gb_name": "资本市场服务",
+      "sort_order": 300
+    },
+    {
+      "code": "68",
+      "name": "保险",
+      "parent_code": "J",
+      "level": 2,
+      "gb_code": "68",
+      "gb_name": "保险业",
+      "sort_order": 310
+    },
+    {
+      "code": "71",
+      "name": "租赁",
+      "parent_code": "L",
+      "level": 2,
+      "gb_code": "71",
+      "gb_name": "租赁业",
+      "sort_order": 320
+    },
+    {
+      "code": "72",
+      "name": "商务服务",
+      "parent_code": "L",
+      "level": 2,
+      "gb_code": "72",
+      "gb_name": "商务服务业",
+      "sort_order": 330
+    },
+    {
+      "code": "73",
+      "name": "研究和试验发展",
+      "parent_code": "M",
+      "level": 2,
+      "gb_code": "73",
+      "gb_name": "研究和试验发展",
+      "sort_order": 340
+    },
+    {
+      "code": "74",
+      "name": "专业技术服务",
+      "parent_code": "M",
+      "level": 2,
+      "gb_code": "74",
+      "gb_name": "专业技术服务业",
+      "sort_order": 350
+    },
+    {
+      "code": "75",
+      "name": "科技推广和应用服务",
+      "parent_code": "M",
+      "level": 2,
+      "gb_code": "75",
+      "gb_name": "科技推广和应用服务业",
+      "sort_order": 360
+    },
+    {
+      "code": "87",
+      "name": "文化艺术",
+      "parent_code": "R",
+      "level": 2,
+      "gb_code": "87",
+      "gb_name": "文化艺术业",
+      "sort_order": 370
+    },
+    {
+      "code": "88",
+      "name": "体育",
+      "parent_code": "R",
+      "level": 2,
+      "gb_code": "88",
+      "gb_name": "体育",
+      "sort_order": 380
+    },
+    {
+      "code": "011",
+      "name": "谷物种植",
+      "parent_code": "01",
+      "level": 3,
+      "gb_code": "011",
+      "gb_name": "谷物种植",
+      "sort_order": 10
+    },
+    {
+      "code": "012",
+      "name": "蔬菜食用菌及园艺作物种植",
+      "parent_code": "01",
+      "level": 3,
+      "gb_code": "012",
+      "gb_name": "蔬菜、食用菌及园艺作物种植",
+      "sort_order": 20
+    },
+    {
+      "code": "031",
+      "name": "牲畜饲养",
+      "parent_code": "03",
+      "level": 3,
+      "gb_code": "031",
+      "gb_name": "牲畜饲养",
+      "sort_order": 30
+    },
+    {
+      "code": "041",
+      "name": "水产养殖",
+      "parent_code": "04",
+      "level": 3,
+      "gb_code": "041",
+      "gb_name": "水产养殖",
+      "sort_order": 40
+    },
+    {
+      "code": "131",
+      "name": "谷物磨制",
+      "parent_code": "13",
+      "level": 3,
+      "gb_code": "131",
+      "gb_name": "谷物磨制",
+      "sort_order": 50
+    },
+    {
+      "code": "133",
+      "name": "植物油加工",
+      "parent_code": "13",
+      "level": 3,
+      "gb_code": "133",
+      "gb_name": "植物油加工",
+      "sort_order": 60
+    },
+    {
+      "code": "141",
+      "name": "焙烤食品制造",
+      "parent_code": "14",
+      "level": 3,
+      "gb_code": "141",
+      "gb_name": "焙烤食品制造",
+      "sort_order": 70
+    },
+    {
+      "code": "144",
+      "name": "乳制品制造",
+      "parent_code": "14",
+      "level": 3,
+      "gb_code": "144",
+      "gb_name": "乳制品制造",
+      "sort_order": 80
+    },
+    {
+      "code": "261",
+      "name": "基础化学原料制造",
+      "parent_code": "26",
+      "level": 3,
+      "gb_code": "261",
+      "gb_name": "基础化学原料制造",
+      "sort_order": 90
+    },
+    {
+      "code": "265",
+      "name": "合成材料制造",
+      "parent_code": "26",
+      "level": 3,
+      "gb_code": "265",
+      "gb_name": "合成材料制造",
+      "sort_order": 100
+    },
+    {
+      "code": "271",
+      "name": "化学药品原料药制造",
+      "parent_code": "27",
+      "level": 3,
+      "gb_code": "271",
+      "gb_name": "化学药品原料药制造",
+      "sort_order": 110
+    },
+    {
+      "code": "366",
+      "name": "汽车零部件及配件制造",
+      "parent_code": "36",
+      "level": 3,
+      "gb_code": "366",
+      "gb_name": "汽车零部件及配件制造",
+      "sort_order": 120
+    },
+    {
+      "code": "441",
+      "name": "电力生产",
+      "parent_code": "44",
+      "level": 3,
+      "gb_code": "441",
+      "gb_name": "电力生产",
+      "sort_order": 130
+    },
+    {
+      "code": "442",
+      "name": "电力供应",
+      "parent_code": "44",
+      "level": 3,
+      "gb_code": "442",
+      "gb_name": "电力供应",
+      "sort_order": 140
+    },
+    {
+      "code": "471",
+      "name": "住宅房屋建筑",
+      "parent_code": "47",
+      "level": 3,
+      "gb_code": "471",
+      "gb_name": "住宅房屋建筑",
+      "sort_order": 150
+    },
+    {
+      "code": "481",
+      "name": "铁路道路隧道和桥梁工程建筑",
+      "parent_code": "48",
+      "level": 3,
+      "gb_code": "481",
+      "gb_name": "铁路、道路、隧道和桥梁工程建筑",
+      "sort_order": 160
+    },
+    {
+      "code": "483",
+      "name": "海洋工程建筑",
+      "parent_code": "48",
+      "level": 3,
+      "gb_code": "483",
+      "gb_name": "海洋工程建筑",
+      "sort_order": 170
+    },
+    {
+      "code": "501",
+      "name": "建筑装饰和装修",
+      "parent_code": "50",
+      "level": 3,
+      "gb_code": "501",
+      "gb_name": "建筑装饰和装修业",
+      "sort_order": 180
+    },
+    {
+      "code": "509",
+      "name": "其他建筑业",
+      "parent_code": "50",
+      "level": 3,
+      "gb_code": "509",
+      "gb_name": "其他建筑业",
+      "sort_order": 190
+    },
+    {
+      "code": "511",
+      "name": "农林牧渔产品批发",
+      "parent_code": "51",
+      "level": 3,
+      "gb_code": "511",
+      "gb_name": "农、林、牧、渔产品批发",
+      "sort_order": 200
+    },
+    {
+      "code": "515",
+      "name": "医药及医疗器材批发",
+      "parent_code": "51",
+      "level": 3,
+      "gb_code": "515",
+      "gb_name": "医药及医疗器材批发",
+      "sort_order": 210
+    },
+    {
+      "code": "517",
+      "name": "机械设备五金产品及电子产品批发",
+      "parent_code": "51",
+      "level": 3,
+      "gb_code": "517",
+      "gb_name": "机械设备、五金产品及电子产品批发",
+      "sort_order": 220
+    },
+    {
+      "code": "521",
+      "name": "综合零售",
+      "parent_code": "52",
+      "level": 3,
+      "gb_code": "521",
+      "gb_name": "综合零售",
+      "sort_order": 230
+    },
+    {
+      "code": "526",
+      "name": "汽车摩托车燃料及零配件专门零售",
+      "parent_code": "52",
+      "level": 3,
+      "gb_code": "526",
+      "gb_name": "汽车、摩托车、燃料及零配件专门零售",
+      "sort_order": 240
+    },
+    {
+      "code": "541",
+      "name": "城市公共交通运输",
+      "parent_code": "54",
+      "level": 3,
+      "gb_code": "541",
+      "gb_name": "城市公共交通运输",
+      "sort_order": 250
+    },
+    {
+      "code": "543",
+      "name": "道路货物运输",
+      "parent_code": "54",
+      "level": 3,
+      "gb_code": "543",
+      "gb_name": "道路货物运输",
+      "sort_order": 260
+    },
+    {
+      "code": "561",
+      "name": "航空客货运输",
+      "parent_code": "56",
+      "level": 3,
+      "gb_code": "561",
+      "gb_name": "航空客货运输",
+      "sort_order": 270
+    },
+    {
+      "code": "591",
+      "name": "装卸搬运",
+      "parent_code": "59",
+      "level": 3,
+      "gb_code": "591",
+      "gb_name": "装卸搬运",
+      "sort_order": 280
+    },
+    {
+      "code": "592",
+      "name": "通用仓储",
+      "parent_code": "59",
+      "level": 3,
+      "gb_code": "592",
+      "gb_name": "通用仓储",
+      "sort_order": 290
+    },
+    {
+      "code": "611",
+      "name": "旅游饭店",
+      "parent_code": "61",
+      "level": 3,
+      "gb_code": "611",
+      "gb_name": "旅游饭店",
+      "sort_order": 300
+    },
+    {
+      "code": "612",
+      "name": "一般旅馆",
+      "parent_code": "61",
+      "level": 3,
+      "gb_code": "612",
+      "gb_name": "一般旅馆",
+      "sort_order": 310
+    },
+    {
+      "code": "621",
+      "name": "正餐服务",
+      "parent_code": "62",
+      "level": 3,
+      "gb_code": "621",
+      "gb_name": "正餐服务",
+      "sort_order": 320
+    },
+    {
+      "code": "622",
+      "name": "快餐服务",
+      "parent_code": "62",
+      "level": 3,
+      "gb_code": "622",
+      "gb_name": "快餐服务",
+      "sort_order": 330
+    },
+    {
+      "code": "631",
+      "name": "电信",
+      "parent_code": "63",
+      "level": 3,
+      "gb_code": "631",
+      "gb_name": "电信",
+      "sort_order": 340
+    },
+    {
+      "code": "632",
+      "name": "广播电视传输服务",
+      "parent_code": "63",
+      "level": 3,
+      "gb_code": "632",
+      "gb_name": "广播电视传输服务",
+      "sort_order": 350
+    },
+    {
+      "code": "641",
+      "name": "互联网接入及相关服务",
+      "parent_code": "64",
+      "level": 3,
+      "gb_code": "641",
+      "gb_name": "互联网接入及相关服务",
+      "sort_order": 360
+    },
+    {
+      "code": "642",
+      "name": "互联网信息服务",
+      "parent_code": "64",
+      "level": 3,
+      "gb_code": "642",
+      "gb_name": "互联网信息服务",
+      "sort_order": 370
+    },
+    {
+      "code": "651",
+      "name": "软件开发",
+      "parent_code": "65",
+      "level": 3,
+      "gb_code": "651",
+      "gb_name": "软件开发",
+      "sort_order": 380
+    },
+    {
+      "code": "653",
+      "name": "信息系统集成和物联网技术服务",
+      "parent_code": "65",
+      "level": 3,
+      "gb_code": "653",
+      "gb_name": "信息系统集成和物联网技术服务",
+      "sort_order": 390
+    },
+    {
+      "code": "661",
+      "name": "中央银行服务",
+      "parent_code": "66",
+      "level": 3,
+      "gb_code": "661",
+      "gb_name": "中央银行服务",
+      "sort_order": 400
+    },
+    {
+      "code": "662",
+      "name": "货币银行服务",
+      "parent_code": "66",
+      "level": 3,
+      "gb_code": "662",
+      "gb_name": "货币银行服务",
+      "sort_order": 410
+    },
+    {
+      "code": "681",
+      "name": "人身保险",
+      "parent_code": "68",
+      "level": 3,
+      "gb_code": "681",
+      "gb_name": "人身保险",
+      "sort_order": 420
+    },
+    {
+      "code": "711",
+      "name": "机械设备经营租赁",
+      "parent_code": "71",
+      "level": 3,
+      "gb_code": "711",
+      "gb_name": "机械设备经营租赁",
+      "sort_order": 430
+    },
+    {
+      "code": "712",
+      "name": "文体设备和用品出租",
+      "parent_code": "71",
+      "level": 3,
+      "gb_code": "712",
+      "gb_name": "文体设备和用品出租",
+      "sort_order": 440
+    },
+    {
+      "code": "723",
+      "name": "法律服务",
+      "parent_code": "72",
+      "level": 3,
+      "gb_code": "723",
+      "gb_name": "法律服务",
+      "sort_order": 450
+    },
+    {
+      "code": "731",
+      "name": "自然科学研究和试验发展",
+      "parent_code": "73",
+      "level": 3,
+      "gb_code": "731",
+      "gb_name": "自然科学研究和试验发展",
+      "sort_order": 460
+    },
+    {
+      "code": "745",
+      "name": "质检技术服务",
+      "parent_code": "74",
+      "level": 3,
+      "gb_code": "745",
+      "gb_name": "质检技术服务",
+      "sort_order": 470
+    },
+    {
+      "code": "751",
+      "name": "技术推广服务",
+      "parent_code": "75",
+      "level": 3,
+      "gb_code": "751",
+      "gb_name": "技术推广服务",
+      "sort_order": 480
+    },
+    {
+      "code": "871",
+      "name": "文艺创作与表演",
+      "parent_code": "87",
+      "level": 3,
+      "gb_code": "871",
+      "gb_name": "文艺创作与表演",
+      "sort_order": 490
+    },
+    {
+      "code": "882",
+      "name": "体育场馆",
+      "parent_code": "88",
+      "level": 3,
+      "gb_code": "882",
+      "gb_name": "体育场馆",
+      "sort_order": 500
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# 运行
+SQLAlchemy>=2.0,<2.1
+psycopg[binary]>=3.2,<4
+
+# 迁移（平台已有 alembic，独立复现时用）
+alembic>=1.13,<2
+
+# 测试
+pytest>=8.0

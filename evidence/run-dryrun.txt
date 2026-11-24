@@ -1,0 +1,7 @@
+=== 行业分类标签导入（DRY RUN，不会写库） ===
+org_id      : 7c9e6679-7425-40de-944b-e07fc1f90ae7
+数据文件    : industry_tags.sample.json
+标签总数    : 100（L1=12  L2=38  L3=50）
+批次        : 2 批 × 50
+---
+校验通过：code/level/父级/gb_code 均合规，未写入任何行。

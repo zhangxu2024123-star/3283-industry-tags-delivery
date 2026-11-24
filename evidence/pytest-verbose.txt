@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- /tmp/venv311/bin/python
+cachedir: .pytest_cache
+rootdir: /tmp/verify3283
+collecting ... collected 25 items
+
+tests/test_seed_industry_tags.py::test_sample_file_has_100_tags_three_levels PASSED [  4%]
+tests/test_seed_industry_tags.py::test_every_tag_has_gb_mapping PASSED   [  8%]
+tests/test_seed_industry_tags.py::test_parent_child_levels_are_consistent PASSED [ 12%]
+tests/test_seed_industry_tags.py::test_first_run_inserts_all PASSED      [ 16%]
+tests/test_seed_industry_tags.py::test_run_twice_no_duplicate_tags PASSED [ 20%]
+tests/test_seed_industry_tags.py::test_run_three_times_keeps_row_ids_stable PASSED [ 24%]
+tests/test_seed_industry_tags.py::test_rerun_refreshes_mutated_fields PASSED [ 28%]
+tests/test_seed_industry_tags.py::test_soft_deleted_tag_is_not_resurrected PASSED [ 32%]
+tests/test_seed_industry_tags.py::test_orgs_are_isolated PASSED          [ 36%]
+tests/test_seed_industry_tags.py::test_cli_prints_level_distribution_from_db PASSED [ 40%]
+tests/test_seed_industry_tags.py::test_cli_second_run_reports_zero_insert PASSED [ 44%]
+tests/test_seed_industry_tags.py::test_cli_json_output PASSED            [ 48%]
+tests/test_seed_industry_tags.py::test_dry_run_writes_nothing PASSED     [ 52%]
+tests/test_seed_industry_tags.py::test_batch_size_does_not_change_result PASSED [ 56%]
+tests/test_seed_industry_tags.py::test_invalid_data_is_rejected_before_writing[<lambda>-gb_code] PASSED [ 60%]
+tests/test_seed_industry_tags.py::test_invalid_data_is_rejected_before_writing[<lambda>-\u4e0d\u7b26\u5408\u56fd\u6807\u4ee3\u7801\u683c\u5f0f] PASSED [ 64%]
+tests/test_seed_industry_tags.py::test_invalid_data_is_rejected_before_writing[<lambda>-level=4] PASSED [ 68%]
+tests/test_seed_industry_tags.py::test_invalid_data_is_rejected_before_writing[<lambda>-\u7236\u7ea7 999 \u4e0d\u5728\u672c\u6587\u4ef6\u4e2d] PASSED [ 72%]
+tests/test_seed_industry_tags.py::test_invalid_data_is_rejected_before_writing[<lambda>-code \u5728\u6587\u4ef6\u5185\u91cd\u590d] PASSED [ 76%]
+tests/test_seed_industry_tags.py::test_invalid_data_is_rejected_before_writing[<lambda>-\u7f3a\u5c11 parent_code] PASSED [ 80%]
+tests/test_seed_industry_tags.py::test_cli_error_message_goes_to_stderr PASSED [ 84%]
+tests/test_seed_industry_tags.py::test_unique_constraint_blocks_duplicate_row PASSED [ 88%]
+tests/test_seed_industry_tags.py::test_parent_fk_is_enforced PASSED      [ 92%]
+tests/test_seed_industry_tags.py::test_level_check_constraint PASSED     [ 96%]
+tests/test_seed_industry_tags.py::test_deleted_partial_index_exists PASSED [100%]
+
+============================== 25 passed in 4.36s ==============================

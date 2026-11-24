@@ -1,0 +1,41 @@
+### alembic upgrade head
+--- alembic current
+20261124_01 (head)
+--- public 表
+alembic_version
+industry_tags
+--- 表结构
+                           Table "public.industry_tags"
+   Column    |           Type           | Collation | Nullable |      Default      
+-------------+--------------------------+-----------+----------+-------------------
+ id          | uuid                     |           | not null | gen_random_uuid()
+ org_id      | uuid                     |           | not null | 
+ site_id     | uuid                     |           |          | 
+ code        | character varying(32)    |           | not null | 
+ name        | character varying(128)   |           | not null | 
+ parent_code | character varying(32)    |           |          | 
+ level       | smallint                 |           | not null | 
+ gb_code     | character varying(8)     |           | not null | 
+ gb_name     | character varying(128)   |           | not null | 
+ sort_order  | integer                  |           | not null | 0
+ created_at  | timestamp with time zone |           | not null | now()
+ created_by  | uuid                     |           |          | 
+ updated_at  | timestamp with time zone |           | not null | now()
+ deleted_at  | timestamp with time zone |           |          | 
+Indexes:
+    "industry_tags_pkey" PRIMARY KEY, btree (id)
+    "ix_industry_tags_org_level_sort" btree (org_id, level, sort_order) WHERE deleted_at IS NULL
+    "uq_industry_tags_org_code" UNIQUE CONSTRAINT, btree (org_id, code)
+Check constraints:
+    "ck_industry_tags_level" CHECK (level >= 1 AND level <= 3)
+Foreign-key constraints:
+    "fk_industry_tags_parent" FOREIGN KEY (org_id, parent_code) REFERENCES industry_tags(org_id, code) DEFERRABLE INITIALLY DEFERRED
+Referenced by:
+    TABLE "industry_tags" CONSTRAINT "fk_industry_tags_parent" FOREIGN KEY (org_id, parent_code) REFERENCES industry_tags(org_id, code) DEFERRABLE INITIALLY DEFERRED
+
+### downgrade base
+--- industry* 表数
+0
+### 再 upgrade head
+--- industry* 表数
+1

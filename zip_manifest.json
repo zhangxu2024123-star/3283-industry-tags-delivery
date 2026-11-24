@@ -1,0 +1,31 @@
+{
+ "file": "3283-industry-tag-seed-delivery.zip",
+ "files": 23,
+ "bytes": 30430,
+ "sha256": "a73f027ec9e0be6246852ccb7324f5e800a1eee771191cfa3fc6fff80b19c33e",
+ "names": [
+  ".gitignore",
+  "alembic/env.py",
+  "alembic/script.py.mako",
+  "alembic/versions/20261124_01_industry_tags.py",
+  "alembic.ini",
+  "data/industry_tags.sample.json",
+  "docs/PR.md",
+  "evidence/db-verify.txt",
+  "evidence/ensure-schema.txt",
+  "evidence/env.txt",
+  "evidence/migration.txt",
+  "evidence/pytest-summary.txt",
+  "evidence/pytest-verbose.txt",
+  "evidence/run-1.txt",
+  "evidence/run-2.txt",
+  "evidence/run-dryrun.txt",
+  "evidence/run-json.txt",
+  "README.md",
+  "requirements.txt",
+  "schema/industry_tags.sql",
+  "scripts/seed_industry_tags.py",
+  "tests/conftest.py",
+  "tests/test_seed_industry_tags.py"
+ ]
+}

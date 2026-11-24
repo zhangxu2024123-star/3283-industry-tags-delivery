@@ -1,0 +1,23 @@
+{
+ "org_id": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+ "file": "/tmp/verify3283/data/industry_tags.sample.json",
+ "tags_total": 100,
+ "file_distribution": {
+  "L1": 12,
+  "L2": 38,
+  "L3": 50
+ },
+ "dry_run": false,
+ "batch_size": 50,
+ "warnings": [],
+ "inserted": 0,
+ "updated": 100,
+ "skipped_soft_deleted": 0,
+ "batches": 2,
+ "db_distribution": {
+  "L1": 12,
+  "L2": 38,
+  "L3": 50
+ },
+ "db_total": 100
+}
